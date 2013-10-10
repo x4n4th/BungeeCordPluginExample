@@ -1,0 +1,4 @@
+name: BungeeCordPlugin
+version: 0.1
+author: x4n4th
+main: bungeCordPlugin.BungeeCordPlugin
