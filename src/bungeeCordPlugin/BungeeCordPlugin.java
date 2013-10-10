@@ -1,5 +1,6 @@
 package bungeeCordPlugin;
 
+import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.plugin.Plugin;
 
 public class BungeeCordPlugin extends Plugin {
@@ -18,7 +19,11 @@ public class BungeeCordPlugin extends Plugin {
    */
   @Override
   public void onEnable() {
-
+    
+    /*
+     * Register Listener with BungeeCord plugin
+     */
+    ProxyServer.getInstance().getPluginManager().registerListener(this, new BungeeCordPluginListener(this));
   }
 
   /**
